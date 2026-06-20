@@ -53,7 +53,7 @@
   /* Style standard buttons inside settings cards and forms */
   groupbox button,
   moz-card button,
-  .main-content button,
+  #preferences-content button,
   #detail-box button,
   groupbox menulist {
     background: rgba(96, 96, 130, 0.18) !important;
@@ -65,7 +65,7 @@
 
   groupbox button:hover,
   moz-card button:hover,
-  .main-content button:hover,
+  #preferences-content button:hover,
   #detail-box button:hover,
   groupbox menulist:hover {
     background: rgba(116, 120, 163, 0.30) !important;
