@@ -105,6 +105,47 @@
     font-weight: bold !important;
   }
 
+  /* Style standard inputs */
+  input,
+  html|input,
+  select,
+  textbox {
+    background: rgba(73, 72, 99, 0.30) !important;
+    border: 1px solid rgba(121, 123, 157, 0.25) !important;
+    color: #f6f7fb !important;
+    border-radius: 6px !important;
+    padding: 6px 12px !important;
+  }
+
+  input:focus,
+  html|input:focus,
+  select:focus,
+  textbox:focus {
+    border-color: #7182bf !important;
+    outline: none !important;
+  }
+
+  /* Style checkboxes */
+  checkbox .checkbox-check {
+    background: rgba(73, 72, 99, 0.30) !important;
+    border: 1px solid rgba(121, 123, 157, 0.25) !important;
+    border-radius: 4px !important;
+  }
+
+  checkbox[checked="true"] .checkbox-check {
+    background: #7182bf !important;
+    border-color: #7182bf !important;
+    color: #f6f7fb !important;
+  }
+
+  /* Style the policies container banner */
+  #policies-container {
+    background: rgba(96, 96, 130, 0.18) !important;
+    border: 1px solid rgba(121, 123, 157, 0.25) !important;
+    color: #f6f7fb !important;
+    border-radius: 8px !important;
+  }
+
   .main-content {
     background-color: rgba(41, 40, 57, 0.62) !important;
   }
