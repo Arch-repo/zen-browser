@@ -10,19 +10,6 @@
     background-color: rgba(41, 40, 57, 0.62) !important;
     --in-content-page-background: rgba(41, 40, 57, 0.62) !important;
   }
-
-  button {
-    background: rgba(96, 96, 130, 0.18) !important;
-    border: 1px solid rgba(121, 123, 157, 0.2) !important;
-    color: #f6f7fb !important;
-    border-radius: 6px !important;
-    padding: 6px 12px !important;
-  }
-
-  button:hover {
-    background: rgba(116, 120, 163, 0.30) !important;
-    border-color: rgba(121, 123, 157, 0.4) !important;
-  }
 }
 
 /* Variables and styles specific to about:newtab and about:home */
@@ -63,21 +50,55 @@
     border-radius: 8px !important;
   }
 
+  /* Style standard buttons inside settings cards and forms */
+  groupbox button,
+  moz-card button,
+  .main-content button,
+  #detail-box button,
+  groupbox menulist {
+    background: rgba(96, 96, 130, 0.18) !important;
+    border: 1px solid rgba(121, 123, 157, 0.2) !important;
+    color: #f6f7fb !important;
+    border-radius: 6px !important;
+    padding: 6px 12px !important;
+  }
+
+  groupbox button:hover,
+  moz-card button:hover,
+  .main-content button:hover,
+  #detail-box button:hover,
+  groupbox menulist:hover {
+    background: rgba(116, 120, 163, 0.30) !important;
+    border-color: rgba(121, 123, 157, 0.4) !important;
+  }
+
   /* Reset background for category sidebar selector buttons */
-  #categories button.category {
+  #categories button.category,
+  .navigation-list button,
+  button.category-button,
+  button.category {
     background: transparent !important;
     border: none !important;
     border-radius: 6px !important;
     opacity: 0.75 !important;
   }
 
-  #categories button.category:hover {
+  #categories button.category:hover,
+  .navigation-list button:hover,
+  button.category-button:hover,
+  button.category:hover {
     background: rgba(116, 120, 163, 0.18) !important;
     opacity: 1 !important;
   }
 
   #categories button.category[selected="true"],
-  #categories button.category.active {
+  #categories button.category.active,
+  .navigation-list button[selected="true"],
+  .navigation-list button.active,
+  button.category-button[selected="true"],
+  button.category-button.active,
+  button.category[selected="true"],
+  button.category.active {
     background: rgba(113, 130, 191, 0.34) !important;
     border-left: 3px solid #7182bf !important;
     opacity: 1 !important;
