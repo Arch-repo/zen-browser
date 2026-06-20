@@ -1,0 +1,60 @@
+/* Anto426 Rofi Dynamic userContent.css */
+
+/* Common variables affecting all pages */
+@-moz-document url-prefix("about:") {
+  :root {
+    --in-content-page-color: #f6f7fb !important;
+    --color-accent-primary: #7182bf !important;
+    --color-accent-primary-hover: #7182bf !important;
+    --color-accent-primary-active: #7182bf !important;
+    background-color: #292839 !important;
+    --in-content-page-background: #292839 !important;
+  }
+}
+
+/* Variables and styles specific to about:newtab and about:home */
+@-moz-document url("about:newtab"), url("about:home") {
+  :root {
+    --newtab-background-color: #292839 !important;
+    --newtab-background-color-secondary: #606082 !important;
+    --newtab-element-hover-color: #606082 !important;
+    --newtab-text-primary-color: #f6f7fb !important;
+    --newtab-wordmark-color: #f6f7fb !important;
+    --newtab-primary-action-background: #7182bf !important;
+  }
+
+  .icon {
+    color: #7182bf !important;
+  }
+
+  .card-outer:is(:hover, :focus, .active):not(.placeholder) .card-title {
+    color: #7182bf !important;
+  }
+}
+
+/* Variables and styles specific to about:preferences */
+@-moz-document url-prefix("about:preferences") {
+  :root {
+    --zen-colors-tertiary: #494863 !important;
+    --in-content-text-color: #f6f7fb !important;
+    --link-color: #7182bf !important;
+    --link-color-hover: #7182bf !important;
+    --zen-colors-primary: #606082 !important;
+    --in-content-box-background: #606082 !important;
+    --zen-primary-color: #7182bf !important;
+  }
+
+  groupbox , moz-card {
+    background: #292839 !important;
+  }
+
+  button,
+  groupbox menulist {
+    background: #606082 !important;
+    color: #f6f7fb !important;
+  }
+
+  .main-content {
+    background-color: #494863 !important;
+  }
+}
