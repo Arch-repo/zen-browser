@@ -45,6 +45,12 @@
   background-color: rgba(53, 52, 73, 0.62) !important;
 }
 
+#urlbar[open] .urlbar-background,
+#urlbar[breakout-extend] .urlbar-background,
+.urlbarView {
+  background-color: rgba(53, 52, 73, 0.95) !important;
+}
+
 .content-shortcuts {
   background-color: rgba(41, 40, 57, 0.62) !important;
   border-color: #7182bf !important;
