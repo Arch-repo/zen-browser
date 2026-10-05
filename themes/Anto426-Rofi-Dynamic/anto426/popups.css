@@ -1,0 +1,49 @@
+panel, menupopup, panel-list {
+  --panel-background: var(--anto-popover) !important;
+  --panel-background-color: var(--anto-popover) !important;
+  --arrowpanel-background: var(--anto-popover) !important;
+  --panel-color: var(--anto-foreground) !important;
+  --panel-border-color: var(--anto-ui-border-glass) !important;
+  --panel-border-radius: var(--anto-radius-card) !important;
+}
+panel::part(content), menupopup::part(content) {
+  background-color: var(--anto-popover) !important;
+  color: var(--anto-foreground) !important;
+  border-color: var(--anto-ui-border-glass) !important;
+  border-radius: var(--anto-radius-card) !important;
+}
+.panel-subview-body, .panel-header { color: var(--anto-foreground) !important; }
+.subviewbutton, menuitem, menu {
+  border-radius: var(--anto-radius-control) !important;
+}
+#zen-folder-tabs-popup, #zen-workspaces-button, #zen-workspaces-menu {
+  color: var(--anto-foreground) !important;
+}
+#zen-folder-tabs-list-search, #zen-workspaces-menu input,
+#zen-workspaces-menu textbox {
+  background: var(--anto-ui-surface) !important;
+  color: var(--anto-foreground) !important;
+  border: 1px solid var(--anto-ui-border-glass) !important;
+  border-radius: var(--anto-radius-control) !important;
+}
+.content-shortcuts, #zenEditBookmarkPanelFaviconContainer {
+  background: var(--anto-ui-surface) !important;
+  border-color: var(--anto-ui-border) !important;
+  border-radius: var(--anto-radius-control) !important;
+}
+zen-sidebar-notification {
+  color: var(--anto-foreground) !important;
+  border-radius: var(--anto-radius-card) !important;
+}
+#zen-toast-container .zen-toast {
+  background: var(--anto-popover) !important;
+  color: var(--anto-foreground) !important;
+  border: 1px solid var(--anto-ui-border-glass) !important;
+  border-radius: var(--anto-radius-card) !important;
+}
+#zen-toast-container .zen-toast button {
+  background: var(--anto-ui-surface) !important;
+  color: var(--anto-foreground) !important;
+  border-color: var(--anto-ui-border) !important;
+  border-radius: var(--anto-radius-control) !important;
+}

@@ -1,0 +1,43 @@
+/* Internal pages only: ordinary websites and document/page colors stay native. */
+@-moz-document url("about:blank"), url("about:newtab"), url("about:home"),
+               url-prefix("about:preferences"), url-prefix("about:addons"),
+               url("about:downloads"), url("about:config") {
+  /* SHARED_ROLES */
+  html, body { background-color: transparent !important; color: var(--anto-foreground) !important; }
+  /* Chrome already paints the panel: avoid doubling its alpha behind pages. */
+  :root {
+    background-color: transparent !important;
+    --background-color-canvas: transparent !important;
+    --in-content-page-background: transparent !important;
+  }
+  .main-content { background-color: transparent !important; }
+  groupbox, moz-card, .card, .addon.card {
+    background: var(--anto-ui-surface) !important;
+    color: var(--anto-foreground) !important;
+    border-color: var(--anto-ui-border) !important;
+    border-radius: var(--anto-radius-card) !important;
+  }
+  input, textbox, select, menulist {
+    background-color: var(--anto-ui-surface) !important;
+    color: var(--anto-foreground) !important;
+    border-color: var(--anto-ui-border-glass) !important;
+    border-radius: var(--anto-radius-control) !important;
+  }
+  input::placeholder, textbox::placeholder { color: var(--anto-muted) !important; opacity: 1 !important; }
+  input:focus, textbox:focus, select:focus { border-color: var(--anto-accent) !important; }
+  #categories > .category[selected], .category[selected="true"] {
+    background: var(--anto-ui-surface-selected) !important;
+    color: var(--anto-foreground) !important;
+    border-radius: var(--anto-radius-control) !important;
+  }
+  #policies-container, #policies-container-content {
+    --nav-notice-background-color: var(--anto-ui-surface) !important;
+    --nav-notice-text-color: var(--anto-foreground) !important;
+    background: var(--anto-ui-surface) !important;
+    color: var(--anto-foreground) !important;
+    border-color: var(--anto-ui-border) !important;
+    border-radius: var(--anto-radius-card) !important;
+  }
+  moz-toggle, moz-checkbox { accent-color: var(--anto-accent) !important; }
+  a { color: var(--anto-accent) !important; }
+}

@@ -1,0 +1,30 @@
+.tab-background { border-radius: var(--anto-radius-control) !important; }
+.tabbrowser-tab[visuallyselected] .tab-background {
+  background: var(--anto-ui-surface-selected) !important;
+  outline: 1px solid var(--anto-ui-border-glass) !important;
+}
+.tabbrowser-tab:not([visuallyselected]):hover .tab-background {
+  background: var(--anto-ui-surface-hover) !important;
+}
+.tabbrowser-tab, .tab-label { color: var(--anto-foreground) !important; }
+.zen-essentials-container .tab-background {
+  background-color: var(--anto-ui-surface) !important;
+}
+.zen-essentials-container .tabbrowser-tab[visuallyselected] .tab-background {
+  background-color: var(--anto-ui-surface-selected) !important;
+}
+zen-folder { --zen-folder-stroke: var(--anto-accent) !important; }
+zen-folder > .tab-group-label-container {
+  border-radius: var(--anto-radius-control) !important;
+  color: var(--anto-foreground) !important;
+}
+.zen-workspace-button { border-radius: var(--anto-radius-control) !important; }
+.zen-workspace-button[active] { background: var(--anto-ui-surface-selected) !important; }
+.identity-color-blue { --identity-tab-color: {{accent}} !important; --identity-icon-color: {{accent}} !important; }
+.identity-color-turquoise { --identity-tab-color: {{green}} !important; --identity-icon-color: {{green}} !important; }
+.identity-color-green { --identity-tab-color: {{green}} !important; --identity-icon-color: {{green}} !important; }
+.identity-color-yellow { --identity-tab-color: {{yellow}} !important; --identity-icon-color: {{yellow}} !important; }
+.identity-color-orange { --identity-tab-color: {{orange}} !important; --identity-icon-color: {{orange}} !important; }
+.identity-color-red { --identity-tab-color: {{red}} !important; --identity-icon-color: {{red}} !important; }
+.identity-color-pink { --identity-tab-color: {{pink}} !important; --identity-icon-color: {{pink}} !important; }
+.identity-color-purple { --identity-tab-color: {{purple}} !important; --identity-icon-color: {{purple}} !important; }

@@ -1,0 +1,30 @@
+.tab-background { border-radius: var(--anto-radius-control) !important; }
+.tabbrowser-tab[visuallyselected] .tab-background {
+  background: var(--anto-ui-surface-selected) !important;
+  outline: 1px solid var(--anto-ui-border-glass) !important;
+}
+.tabbrowser-tab:not([visuallyselected]):hover .tab-background {
+  background: var(--anto-ui-surface-hover) !important;
+}
+.tabbrowser-tab, .tab-label { color: var(--anto-foreground) !important; }
+.zen-essentials-container .tab-background {
+  background-color: var(--anto-ui-surface) !important;
+}
+.zen-essentials-container .tabbrowser-tab[visuallyselected] .tab-background {
+  background-color: var(--anto-ui-surface-selected) !important;
+}
+zen-folder { --zen-folder-stroke: var(--anto-accent) !important; }
+zen-folder > .tab-group-label-container {
+  border-radius: var(--anto-radius-control) !important;
+  color: var(--anto-foreground) !important;
+}
+.zen-workspace-button { border-radius: var(--anto-radius-control) !important; }
+.zen-workspace-button[active] { background: var(--anto-ui-surface-selected) !important; }
+.identity-color-blue { --identity-tab-color: #ed94b8 !important; --identity-icon-color: #ed94b8 !important; }
+.identity-color-turquoise { --identity-tab-color: #a6da95 !important; --identity-icon-color: #a6da95 !important; }
+.identity-color-green { --identity-tab-color: #a6da95 !important; --identity-icon-color: #a6da95 !important; }
+.identity-color-yellow { --identity-tab-color: #eed49f !important; --identity-icon-color: #eed49f !important; }
+.identity-color-orange { --identity-tab-color: #f5a97f !important; --identity-icon-color: #f5a97f !important; }
+.identity-color-red { --identity-tab-color: #ed8796 !important; --identity-icon-color: #ed8796 !important; }
+.identity-color-pink { --identity-tab-color: #f5bde6 !important; --identity-icon-color: #f5bde6 !important; }
+.identity-color-purple { --identity-tab-color: #c6a0f6 !important; --identity-icon-color: #c6a0f6 !important; }

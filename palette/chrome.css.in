@@ -1,0 +1,60 @@
+@import url("roles.css");
+@import url("tabs.css");
+@import url("popups.css");
+
+/* The native background pseudo-element paints the single shared glass tint. */
+#main-window, #browser, #zen-main-app-wrapper, #navigator-toolbox,
+#nav-bar, #TabsToolbar, #zen-appcontent-navbar-container,
+#zen-appcontent-navbar-wrapper, #tabbrowser-tabpanels, #sidebar-box {
+  background-color: transparent !important;
+  color: var(--anto-foreground) !important;
+}
+#zen-browser-background::after {
+  background: var(--anto-ui-panel) !important;
+}
+.zen-browser-generic-background::before { background: transparent !important; }
+.zen-browser-generic-background .zen-browser-grain { display: none !important; }
+.urlbar-background, #urlbar-background {
+  background: var(--anto-ui-surface) !important;
+  border: 1px solid var(--anto-ui-border-glass) !important;
+  border-radius: var(--anto-radius-control) !important;
+}
+#urlbar:is([open], [breakout-extend]) .urlbar-background,
+#urlbar:is([open], [breakout-extend]) #urlbar-background,
+.urlbarView {
+  background: var(--anto-popover) !important;
+  border-radius: var(--anto-radius-card) !important;
+}
+#urlbar[focused] > .urlbar-background,
+#urlbar[focused] > #urlbar-background {
+  border-color: var(--anto-accent) !important;
+}
+#urlbar .urlbar-input { color: var(--anto-foreground) !important; }
+#urlbar .urlbar-input::placeholder { color: var(--anto-muted) !important; opacity: 1 !important; }
+.urlbarView-url { color: var(--anto-accent) !important; }
+.urlbarView-row[selected] { background: var(--anto-ui-surface-selected) !important; }
+.urlbarView-row-inner { border-radius: var(--anto-radius-control) !important; }
+#zen-media-controls-toolbar, .zen-media-card {
+  background: var(--anto-ui-surface) !important;
+  border-radius: var(--anto-radius-card) !important;
+  color: var(--anto-foreground) !important;
+}
+.zen-media-progress-bar::-moz-range-track,
+#zen-media-progress-bar::-moz-range-track { background: var(--anto-ui-border) !important; }
+.zen-media-progress-bar::-moz-range-progress,
+#zen-media-progress-bar::-moz-range-progress { background: var(--anto-accent) !important; }
+#statuspanel-label {
+  background: var(--anto-popover) !important;
+  color: var(--anto-foreground) !important;
+  border: 1px solid var(--anto-ui-border) !important;
+  border-radius: var(--anto-radius-control) !important;
+}
+.zen-split-view-splitter:hover { background: var(--anto-accent) !important; }
+.browserSidebarContainer, #zen-glance-background {
+  border-radius: var(--anto-radius-card) !important;
+}
+#zen-glance-background { background: var(--anto-ui-panel) !important; }
+/* Keep compact/sidebar/split positioning and visibility under Zen's control. */
+@media (prefers-reduced-motion: reduce) {
+  .tab-background, .urlbar-background { transition: none !important; }
+}
