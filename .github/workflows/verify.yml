@@ -9,3 +9,5 @@ jobs:
         with:
           python-version: '3.x'
       - run: python3 scripts/verify-palette.py
+      - run: python3 palette/render.py --palette palette/default.json --material palette/material.json --output themes/Anto426-Rofi-Dynamic
+      - run: git diff --exit-code -- themes/Anto426-Rofi-Dynamic
